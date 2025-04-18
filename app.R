@@ -6,8 +6,8 @@ library(sortable)
 library(DT)
 
 # --- Données ---
-df <- read.csv("~/Downloads/stages_nettoyes/raw data/affectation_formatee.csv", stringsAsFactors = FALSE)
-avis <- read.csv("~/Downloads/stages_nettoyes/raw data/avis_de_stage_clean_v2.csv", stringsAsFactors = FALSE)
+df <- read.csv("data/affectation_formatee.csv", stringsAsFactors = FALSE)
+avis <- read.csv("data/avis_de_stage_clean_v2.csv", stringsAsFactors = FALSE)
 
 df <- df %>% mutate(stage_clean = str_to_lower(stage))
 
